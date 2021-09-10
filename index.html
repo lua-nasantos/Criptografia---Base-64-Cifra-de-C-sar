@@ -18,17 +18,21 @@
         <section id="box2">
             <label for="tipo"> Selecione o tipo de codificação:</label>
             <input type="text" name="tipo" id="mensagem">
+            <div id ="cifra">
             <label for="icremento">Selecione a sua chave:</label>
-            <input type="number" name="incremento" id="incremento" min="">
+            <input type="number" name="incremento" id="incremento" min="1">
+            </div>
             <select name="selecione" id="selecione">
                <option>Selecione:</option>
                <option value="1">Base 64</option>
                <option value="2">Cifra de César</option>
             </select>
+            <div class="metodo">
             <label for="decriptografar">Decriptografar</label>
             <input type="radio" name="escolha" id="decriptografar">
             <label for="criptografar">Criptografar</label>
             <input type="radio" name="escolha" id="criptografar">
+            </div>
             <p>Resultado:</p>
             <div id="resultado">
                 

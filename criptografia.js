@@ -23,6 +23,16 @@ botao.addEventListener("click", function(){
     }
 })
 
+document.getElementById("selecione").addEventListener("click",()=>{
+    incremento = document.getElementById("cifra")
+    if(document.getElementById("selecione").value=="1"){
+        incremento.style.display="none"
+    }
+    else if(document.getElementById("selecione").value=="2"){
+        incremento.style.display="flex"   
+    }
+})
+
 // motor para Cifra de César
 function cifrado() {
     let mensagemArr = mensagem.split('')
