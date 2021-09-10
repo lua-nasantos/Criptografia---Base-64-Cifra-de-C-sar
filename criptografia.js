@@ -1,10 +1,27 @@
-let mensagem = document.getElementById("mensagem").value
-let incremento = parseInt(document.getElementById("incremento").value)
 let botao = document.querySelector("button")
+let mensagem
+let incremento
 
-botao.onclick = function(){
-    
-}
+botao.addEventListener("click", function(){
+    mensagem = document.getElementById("mensagem").value
+    incremento = parseInt(document.getElementById("incremento").value)
+    if(document.getElementById("selecione").value=="1"){
+     if(document.getElementById("criptografar").checked){
+        document.getElementById("resultado").innerHTML= codificador()
+     }
+     else if (document.getElementById("decriptografar").checked){
+        document.getElementById("resultado").innerHTML= decodificado()
+     }
+    }    
+    else if(document.getElementById("selecione").value=="2"){
+        if(document.getElementById("criptografar").checked){
+            document.getElementById("resultado").innerHTML= cifrado()
+        } 
+        else if (document.getElementById("decriptografar").checked){
+            document.getElementById("resultado").innerHTML= decifrado()
+        }  
+    }
+})
 
 // motor para Cifra de César
 function cifrado() {

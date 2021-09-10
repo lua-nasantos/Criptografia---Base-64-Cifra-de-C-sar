@@ -6,43 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criptografia</title>
-    <style>
-        body {
-            color: white;
-            padding: 10px;
-            background: url(img.jpg);
-            background-size: cover;
-            align-items: center;
-        } 
-        #box{
-            display: flex;
-            width: 90%;
-            justify-content: flex-end;
-        }
-        #box2{
-            display: flex;
-            flex-direction: column;
-            background-color: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-            width: 30%;
-            height: 300px;
-            padding: 20px;
-        }
-         section div{
-             display: flex;
-             align-content: center;
-             justify-content: center;
-             width: 90%;
-             height: 20%;
-             background-color: white;
-             border-radius: 5px;
-        }
-         section p{
-             width: 100%;
-             text-align: center ;
-         }
-
-    </style>
+    <link rel="stylesheet" href="criptografia.css">
+    <script src="criptografia.js" defer></script>
 </head>
 
 <body>
@@ -54,7 +19,7 @@
             <label for="tipo"> Selecione o tipo de codificação:</label>
             <input type="text" name="tipo" id="mensagem">
             <label for="icremento">Selecione a sua chave:</label>
-            <input type="number" name="incremento" id="incremento">
+            <input type="number" name="incremento" id="incremento" min="">
             <select name="selecione" id="selecione">
                <option>Selecione:</option>
                <option value="1">Base 64</option>
@@ -65,8 +30,8 @@
             <label for="criptografar">Criptografar</label>
             <input type="radio" name="escolha" id="criptografar">
             <p>Resultado:</p>
-            <div>
-                <p id="resultado"></p>
+            <div id="resultado">
+                
             </div>
             <button>Enviar</button>
         </section>
