@@ -1,10 +1,18 @@
 body {
+    display: flex;
+    flex-direction: column;
     color: white;
     padding: 10px;
     background: url(img.jpg);
     background-size: cover;
     align-items: center;
+    justify-items: center;
 } 
+
+h1{
+    align-self: flex-start;
+}
+
 #box{
     display: flex;
     width: 90%;
@@ -37,4 +45,10 @@ body {
 .metodo{
     display: flex;
     padding: 2px;
+}
+footer{
+    display: flex;
+    width: 90%;
+    justify-content:space-between;
+    justify-self: end;
 }
